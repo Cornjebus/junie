@@ -33,6 +33,40 @@
 
 Integrating Supabase with Clerk gives you the benefits of using a Supabase database while leveraging Clerk's authentication, prebuilt components, and webhooks. To get the most out of Supabase with Clerk, you must implement custom [Row Level Security](https://supabase.com/docs/guides/auth/row-level-security) (RLS) policies.
 
+## ✨ Enhancements in This Version
+
+This repository has been enhanced with:
+
+### 🎨 shadcn/ui Integration
+- Beautiful, customizable UI components
+- Custom Sign In/Sign Up pages with shadcn styling
+- OAuth integration (GitHub, Google)
+- Multi-step authentication flows
+- Email verification with OTP
+
+### 🤖 RAG (Retrieval Augmented Generation)
+- **Supabase pgvector** - Vector similarity search
+- **LangChain.js** - Framework for LLM applications
+- **Vercel AI SDK** - Streaming chat interface
+- **OpenAI Embeddings** - Semantic search capabilities
+- Document storage and retrieval
+- Context-aware AI responses
+
+### 💬 AI Chat Features
+- Streaming chat interface
+- Two chat modes:
+  - **Basic RAG** (`/api/chat`) - Automatic context retrieval
+  - **Agent Mode** (`/api/chat/agents`) - Tools + reasoning
+- LangChain tools:
+  - Document retrieval from vector store
+  - Calculator for math operations
+  - Extensible tool system
+
+See the detailed guides:
+- [SETUP_GUIDE.md](./SETUP_GUIDE.md) - Complete setup instructions
+- [LANGCHAIN_SETUP.md](./LANGCHAIN_SETUP.md) - LangChain & AI configuration
+- [supabase/README.md](./supabase/README.md) - pgvector setup
+
 After following [the Clerk + Supabase integration guide](https://clerk.com/docs/integrations/databases/supabase), you will have learned how to:
 
 - Enable the Supabase integration on your Clerk instance
