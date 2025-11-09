@@ -318,8 +318,8 @@ CREATE INDEX idx_subscriptions_status ON subscriptions(status);
 
 -- AI Costs table indexes
 CREATE INDEX idx_ai_costs_user_id ON ai_costs(user_id);
-CREATE INDEX idx_ai_costs_user_month ON ai_costs(user_id, DATE_TRUNC('month', timestamp));
 CREATE INDEX idx_ai_costs_timestamp ON ai_costs(timestamp);
+CREATE INDEX idx_ai_costs_user_timestamp ON ai_costs(user_id, timestamp);
 
 -- ============================================================================
 -- ROW LEVEL SECURITY (RLS)
